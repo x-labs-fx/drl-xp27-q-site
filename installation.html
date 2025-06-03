@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <title>Installation & Setup | DrL-Xp27-Q EA</title>
+  <meta
+    name="description"
+    content="Step-by-step guide to install and configure DrL-Xp27-Q Expert Advisor on MetaTrader 4."
+  />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Simple top nav consistent with index.html -->
+  <nav class="top-nav">
+    <div class="container nav-container">
+      <a href="/drl-xp27-q-site/" class="nav-logo">
+        <img src="assets/img/logo.png" alt="X Labs FX Logo" height="48" />
+      </a>
+      <div class="nav-links">
+        <a href="/drl-xp27-q-site/">Home</a>
+        <a href="installation.html">Installation</a>
+        <a href="faq.html">FAQ</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#resources">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section-white">
+    <div class="container">
+      <h1>Installation &amp; Setup Guide</h1>
+      <p>
+        Follow these steps to download, install, and configure the DrL-Xp27-Q
+        EA in your MetaTrader 4 platform. By the end, you’ll be ready to run a
+        7-day free trial on demo or live.
+      </p>
+
+      <h2>1. Download the EA</h2>
+      <ol>
+        <li>
+          Click the <strong>Download Free 7-Day Trial</strong> button on the
+          <a href="index.html">main page</a>. This automatically fetches the
+          latest <code>.ex4</code> file from our GitHub releases.
+        </li>
+        <li>
+          Save <code>DrL-Xp27-Q.ex4</code> to a folder you can easily find
+          (e.g., your Desktop or Downloads folder).
+        </li>
+      </ol>
+
+      <h2>2. Copy to MT4 Experts Folder</h2>
+      <ol>
+        <li>
+          Open your MetaTrader 4 installation directory. If you’re on Windows,
+          the default path is typically:
+          <br />
+          <code>C:\Program Files (x86)\MetaTrader 4\MQL4\Experts\</code>
+        </li>
+        <li>
+          Copy the downloaded <code>DrL-Xp27-Q.ex4</code> file into
+          <code>…\MQL4\Experts\</code>. You may need administrator privileges
+          to write here.
+        </li>
+        <li>
+          Restart MetaTrader 4 (if it was already open), or launch it if it’s
+          closed. This ensures MT4 sees the new EA file.
+        </li>
+      </ol>
+
+      <h2>3. Attach the EA to a Chart</h2>
+      <ol>
+        <li>
+          In MT4’s “Navigator” window (press <strong>Ctrl + N</strong> if
+          hidden), expand <strong>Expert Advisors ➞</strong> and find
+          <strong>DrL-Xp27-Q</strong>.
+        </li>
+        <li>
+          Open a new chart for either EURUSD or AUDUSD (preferably 1-hour or
+          4-hour timeframe). Right-click that symbol in “Market Watch” and
+          choose <strong>Chart Window</strong>.
+        </li>
+        <li>
+          Drag <strong>DrL-Xp27-Q</strong> from the “Navigator” onto the chart,
+          or double-click it. A configuration dialog appears.
+        </li>
+      </ol>
+
+      <h2>4. Configure Inputs</h2>
+      <ol>
+        <li>
+          In the <strong>Inputs</strong> tab, you will see only one variable:
+          <code>Equity Risk %</code> (default 2.0). This setting controls how
+          much of your account equity is risked per trade.
+        </li>
+        <li>
+          Adjust “Equity Risk %” to match your personal risk tolerance. For
+          example:
+          <ul>
+            <li>5.0 → more conservative</li>
+            <li>10.0 → default, balanced</li>
+            <li>15.0 → more aggressive (larger positions)</li>
+          </ul>
+        </li>
+        <li>
+          Click <strong>OK</strong> to save inputs.
+        </li>
+      </ol>
+
+      <h2>5. Enable Automated Trading</h2>
+      <ol>
+        <li>
+          In the top toolbar of MT4, click the <strong>AutoTrading</strong>
+          button so it turns green.  
+        </li>
+        <li>
+          Ensure the smiley face appears at the top‐right of your chart,
+          indicating the EA is allowed to trade.
+        </li>
+      </ol>
+
+      <h2>6. Monitor &amp; Trade</h2>
+      <ol>
+        <li>
+          Once enabled, DrL-Xp27-Q will start analyzing market data
+          (price, ATR, RSI, volatility) and placing trades automatically.
+        </li>
+        <li>
+          You can view all open positions in the <strong>Trade</strong> tab of
+          the <strong>Terminal</strong> window.  
+        </li>
+        <li>
+          If you wish to pause the EA at any time, simply click the
+          <strong>AutoTrading</strong> button again to turn it red.  
+        </li>
+      </ol>
+
+      <h2>7. Switching to Live after Trial</h2>
+      <ol>
+        <li>
+          Your first 7 days are entirely free on demo—no payment needed. After
+          that, to continue using on demo or live, click “Pay $500 &amp;
+          Download EA.”  
+        </li>
+        <li>
+          Enter your US bank/crypto payment according to the
+          <a href="payment-instructions.html">Payment Instructions</a> page.
+        </li>
+        <li>
+          The same <code>DrL-Xp27-Q.ex4</code> file works for both demo and
+          live accounts.  
+        </li>
+      </ol>
+
+      <h2>Troubleshooting Tips</h2>
+      <ul>
+        <li>
+          If MT4 cannot find <code>DrL-Xp27-Q.ex4</code>, confirm the file is
+          in <code>MQL4\Experts\</code>, then restart MT4.
+        </li>
+        <li>
+          If “AutoTrading” is off (red), the EA will not place trades—even if
+          configured correctly.
+        </li>
+        <li>
+          Make sure your demo account has at least $1 000 balance for the EA
+          to open initial positions.  
+        </li>
+        <li>
+          If you see error messages in the “Experts” or “Journal” tabs of the
+          Terminal window, take a screenshot and contact
+          <a href="mailto:support@xlabsfx.com">support@xlabsfx.com</a>.
+        </li>
+      </ul>
+
+      <p style="margin-top: 32px; text-align: center;">
+        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+      </p>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/drl-xp27-q-site/">Home</a> •
+        <a href="installation.html">Installation</a> •
+        <a href="faq.html">FAQ</a> •
+        <a href="index.html#pricing">Pricing</a> •
+        <a href="index.html#resources">Support</a>
+      </div>
+      <p class="legal">
+        © 2025 X Labs FX. All rights reserved.<br />
+        <small>
+          Risk Disclosure: Trading forex carries a high level of risk. Past
+          performance is not indicative of future results.
+        </small>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
