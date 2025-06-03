@@ -14,7 +14,29 @@ body {
   background-color: #fff;
 }
 
-/* 2) CONTAINERS & SECTIONS */
+/* 2) TOP NAVIGATION */
+.top-nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+.nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 0;
+}
+.top-nav a {
+  margin-left: 16px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+/* 3) CONTAINERS & SECTIONS */
 .container {
   width: 90%;
   max-width: 800px;
@@ -34,7 +56,7 @@ footer.footer {
   text-align: center;
 }
 
-/* 3) TYPOGRAPHY */
+/* 4) TYPOGRAPHY */
 h1,
 h2,
 h3 {
@@ -88,7 +110,7 @@ p {
   line-height: 1.4;
 }
 
-/* 4) BUTTONS */
+/* 5) BUTTONS */
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -126,7 +148,7 @@ p {
   margin: 16px 0;
 }
 
-/* 5) HERO SECTION */
+/* 6) HERO SECTION */
 .hero-section {
   background-color: #f8f9fa;
   text-align: center;
@@ -140,7 +162,7 @@ p {
   margin-bottom: 28px;
 }
 
-/* 6) FEATURES LIST */
+/* 7) FEATURES LIST */
 .features-list {
   list-style: none;
   margin-top: 16px;
@@ -159,14 +181,14 @@ p {
   font-size: 1rem;
 }
 
-/* 7) VERIFIED RESULTS / WIDGET */
+/* 8) VERIFIED RESULTS / WIDGET */
 .widget-wrapper {
   max-width: 100%;
   overflow: hidden;
   margin: 20px 0;
 }
 
-/* 8) PRICING SECTION */
+/* 9) PRICING SECTION */
 #pricing h2 {
   margin-bottom: 12px;
 }
@@ -174,7 +196,7 @@ p {
   margin-bottom: 12px;
 }
 
-/* 9) STEPS (“HOW IT WORKS”) */
+/* 10) STEPS (“HOW IT WORKS”) */
 .steps {
   display: flex;
   flex-direction: column;
@@ -197,7 +219,7 @@ p {
   }
 }
 
-/* 10) RESOURCES LIST */
+/* 11) RESOURCES LIST */
 .resources-list {
   list-style: none;
   margin-top: 16px;
@@ -214,12 +236,12 @@ p {
   text-decoration: underline;
 }
 
-/* 11) FOOTER STYLING */
+/* 12) FOOTER STYLING */
 .footer-links {
   margin-bottom: 12px;
 }
 
-/* 12) MOBILE‐FRIENDLY TWEAKS */
+/* 13) MOBILE‐FRIENDLY TWEAKS */
 @media (max-width: 600px) {
   h1 {
     font-size: 1.75rem;
@@ -237,5 +259,14 @@ p {
   }
   .features-list li {
     font-size: 0.95rem;
+  }
+  .nav-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .top-nav a {
+    margin-left: 0;
+    margin-right: 12px;
   }
 }
